@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/colorFondo"
+    android:layout_height="match_parent"
+    tools:context=".reservas.DetalleReservaActivity"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/border_all"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@color/colorFondo2">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="413dp"
+                android:background="@color/colorFondo2"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="278dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:padding="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_qr" />
+
+                <TextView
+                    android:id="@+id/txt_codReserva"
+                    android:layout_width="287dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Movie:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMovie"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="" />
+
+            <!-- Cinema -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Cinema:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCinema"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="" />
+
+            <!-- Hour -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Hour:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHour"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:text="" />
+
+            <!-- Date -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Date:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDate"
+
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="" />
+
+            <!-- Seat -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Seat:"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSeat"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="" />
+
+            <!-- Tickets List -->
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:text="Tickets:"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ticketsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="vertical" />
+
+            <!-- Payment Info List -->
+            <LinearLayout
+                android:id="@+id/paymentsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="122dp"
+                    android:layout_height="39dp"
+                    android:text="Payments:"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</ScrollView>

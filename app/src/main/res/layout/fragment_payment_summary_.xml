@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorFondo"
+    android:layout_height="match_parent"
+    tools:context=".desing.peliculas.fragments.payment_summary_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Elige una forma de Pago"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="24dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_tarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tarjeta de Crédito o Débito"
+                android:textColor="@color/white"
+                android:paddingVertical="16dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_appAgorra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App agora"
+                android:textColor="@color/white"
+                android:paddingVertical="16dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_billeteras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Billeteras Electrónicas"
+                android:textColor="@color/white"
+                android:paddingVertical="16dp"/>
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinnerSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_proceed_payment"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Guardar selecionar" />
+    </LinearLayout>
+</ScrollView>

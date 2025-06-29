@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "786326442955",
+    "project_id": "cinerama-56770",
+    "storage_bucket": "cinerama-56770.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786326442955:android:48d97974bed7959ae09c4e",
+        "android_client_info": {
+          "package_name": "com.nestor.cinerama"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv9ytqDTh85Qd_vhH7iBku6q3g7zL4n08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

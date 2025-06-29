@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    android:id="@+id/rootLayout"
+    tools:context=".desing.cines.fragments.CinemaFragment">
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Cines"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <Spinner
+                android:id="@+id/citySpinner"
+                android:layout_width="192dp"
+                android:layout_height="47dp"
+                android:background="@color/white"
+                android:drawablePadding="8dp"
+                android:hint="Por Ciudad"/>
+
+
+            <Spinner
+                android:id="@+id/formatSpinner"
+                android:layout_width="159dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/white"
+                android:drawablePadding="8dp"
+                android:hint="Por Formato" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <Button
+                android:background="@color/colorText"
+                android:id="@+id/listButton"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:text="Lista" />
+
+            <Button
+                android:background="@color/colorText"
+                android:id="@+id/btnMostrarMapa"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:drawablePadding="8dp"
+                android:text="Mapa" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ryv_Cinemas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:visibility="gone"
+            android:background="#AA000000" />
+    </LinearLayout>
+</FrameLayout>

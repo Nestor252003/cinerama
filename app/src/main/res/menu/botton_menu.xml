@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"    >
+    <item
+        android:id="@+id/homeM"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/moviesM"
+        android:title="Peliculas"
+        android:icon="@drawable/movies_button"/>
+    <item
+        android:id="@+id/cinemaM"
+        android:title="Cines"
+        android:icon="@drawable/cinema_button"/>
+    <item
+        android:id="@+id/foodM"
+        android:title="bebidas"
+        android:icon="@drawable/food_button"/>
+    <item
+        android:id="@+id/moreM"
+        android:title="Reservaciones"
+        android:icon="@drawable/ic_reservation"/>
+</menu>

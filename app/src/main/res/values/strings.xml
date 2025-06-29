@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name" translatable="false">Cinerama</string>
+    <string name="developer" translatable="false">Jhonatan</string>
+    <string name="Version" translatable="false">Versíon 1.0.0</string>
+
+
+    <style name="NoAnimationBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemHorizontalTranslationEnabled">false
+        </item>
+        <item name="itemIconTint">@null
+        </item>
+    </style>
+
+    <string name="tab_peliculas_description">Tab layout for movies</string>
+
+    <string-array name="Amazonas">
+        <item>Opción 1</item>
+        <item>Opción 2</item>
+        <item>Opción 3</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="credit_card_providers_array">
+        <item>BCP</item>
+        <item>Interbank</item>
+        <item>Mi Banco</item>
+        <item>Scotiabank</item>
+        <item>BBVA</item>
+    </string-array>
+    <string-array name="app_agora_options_array">
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+    </string-array>
+    <string-array name="e_wallet_options_array">
+        <item>Yape</item>
+        <item>Plin</item>
+        <item>Other</item>
+    </string-array>
+</resources>
